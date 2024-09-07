@@ -29,7 +29,9 @@ const extractors = [
   {
     name: "divs",
     extract: (document) => {
-      return document.querySelectorAll("div");
+      return Array.from(
+        document.querySelectorAll("ytd-mini-guide-entry-renderer")
+      ).filter((el) => el.getAttribute("aria-label") === "Shorts");
     },
   },
 ];
@@ -41,5 +43,7 @@ const { extract } = require("beautify-dev");
 const extractors = require("./extractors");
 
 const results = extract(extractors);
+
+console.log(results);
 
 },{"./extractors":3,"beautify-dev":2}]},{},[4]);
