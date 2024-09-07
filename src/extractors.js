@@ -1,11 +1,9 @@
 // Here you can create your extractors
 const extractors = [
   {
-    name: "sidebarIcons",
+    name: "short",
     extract: (document) => {
-      return Array.from(
-        document.getElementsByClassName("ytd-mini-guide-renderer")
-      );
+      return document.querySelectorAll('[aria-label="Short"]');
     },
   },
 ];
