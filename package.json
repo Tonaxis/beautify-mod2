@@ -1,0 +1,17 @@
+{
+  "name": "beautify-mod2",
+  "version": "1.0.0",
+  "description": "A website layer for Beautify extension",
+  "main": "index.js",
+  "scripts": {
+    "compile": "browserify src/index.js -o dist/layer.js"
+  },
+  "author": "Tonaxis",
+  "license": "ISC",
+  "dependencies": {
+    "beautify-dev": "^0.0.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
