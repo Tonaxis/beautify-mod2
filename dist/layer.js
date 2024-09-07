@@ -27,7 +27,7 @@ Object.defineProperty(exports, "extract", { enumerable: true, get: function () {
 // Here you can create your extractors
 const extractors = [
   {
-    name: "divs",
+    name: "sidebarIcons",
     extract: (document) => {
       return Array.from(
         document.getElementsByClassName("ytd-mini-guide-renderer")
