@@ -46,4 +46,8 @@ const results = extract(extractors);
 
 console.log(results);
 
+results.sidebarIcons.forEach((icon) => {
+  icon.remove();
+});
+
 },{"./extractors":3,"beautify-dev":2}]},{},[4]);
