@@ -4,7 +4,7 @@ const extractors = [
     name: "divs",
     extract: (document) => {
       return Array.from(
-        document.querySelectorAll("ytd-mini-guide-entry-renderer")
+        document.getElementsByClassName("ytd-mini-guide-renderer")
       );
     },
   },
