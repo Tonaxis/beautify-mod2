@@ -29,7 +29,7 @@ const extractors = [
   {
     name: "short",
     extract: (document) => {
-      return document.querySelectorAll('[aria-label="Short"]');
+      return document.querySelectorAll('[aria-label="Shorts"]');
     },
   },
 ];
