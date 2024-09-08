@@ -44,7 +44,7 @@ const results = extract(extractors);
 
 console.log(results);
 
-results.sidebarIcons?.forEach((icon) => {
+results.shorts?.forEach((icon) => {
   icon.remove();
 });
 
