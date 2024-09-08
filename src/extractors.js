@@ -3,7 +3,9 @@ const extractors = [
   {
     name: "shorts",
     extract: (document) => {
-      return document.querySelectorAll("ytd-mini-guide-entry-renderer");
+      return document.querySelectorAll(
+        'ytd-mini-guide-entry-renderer[aria-label="Shorts"]'
+      );
     },
   },
 ];
